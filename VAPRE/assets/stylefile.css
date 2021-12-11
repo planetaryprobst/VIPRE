@@ -1,0 +1,125 @@
+/* Definition of my Stylesheet */
+
+* {
+    box-sizing: border-box
+}
+
+body, .vapre-framework {
+    /*height: 95vh;*/
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 5px 5px 5px;
+    background-image: url("MilkyWay-Background.png");
+    background-color: black;
+    color: white;
+}
+
+.title {
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+}
+
+.subtitle {
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+}
+
+
+.body-wrapper {
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    grid-template-columns: 220px 10px auto;
+    grid-template-rows: 1fr ;
+    grid-template-areas: "sidebar . main";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding-top: 150px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr 2fr; */
+    /* grid-template-areas: "buttons" "sliders"; */
+}
+
+.sidebar > * {
+    margin-bottom: 10px;
+}
+
+.main {
+    padding: 0 2.5% 0 2.5%;
+    grid-area: main;
+    width: 95%;
+    /* display: grid;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 3fr 1fr; */
+    /* grid-template-areas: "trajOverview" "trajDetails"; */
+}
+
+.button {
+    color: black;
+    width: 100%;
+    margin: 5px auto;
+    height: 2em;
+}
+
+.dropdown-menu{
+    color: black;
+}
+
+.test {
+    color:white;
+}
+
+.graph {
+    height: calc(var(--height) * var(--width) * 100%);
+    width: calc(var(--width) * 100%);
+    /* height: calc( var(--height) * ( 100vw - 260px )); */
+    /* width: calc( var(--width) * ( 100vw - 260px )); */
+}
+
+
+#graph-traj-data-overview {
+    margin: 5px 0px 5px 0;
+    --height: 0.5;
+    --width: 1;   
+}
+
+.table-graph-container {
+
+}
+
+.table-container { 
+    display: inline-block;
+    background: transparent;
+    color: blue;
+    margin: 10px 10px 10px 80px;
+    
+    /* --height: 0.2
+    --width: 0.4
+    
+    height: calc( var(--height) * ( 100vw - 230px ));
+    width: calc( var(--width) * ( 100vw - 230px )); */
+    
+}
+
+/* #graph-container {
+    position: relative;
+    
+    width: calc(0.4 * 100%);
+    padding-top: 100%; 
+} */
+
+#graph-entry-data {
+    display: inline-block;
+    /*--height: 1;
+    --width: 0.3;*/
+    /* position: absolute; */
+    /* width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0; */
+}

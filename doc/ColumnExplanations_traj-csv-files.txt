@@ -1,0 +1,22 @@
+
+Variable name (unit)	Explanation
+	
+launch (days past J2000)	launch date in days past J2000 (a time reference frame starting to count days at Jan 01 2000)
+
+arrive (days past J2000)	arrival date in days past J2000
+
+Vinfinity (km/s EMO2000)	hyperbolic arrival velocity vector of the trajectory in km/s, reference frame EMO2000
+
+planet pos (km EMO2000)		the position vector of the planet in km, reference frame EMO2000
+
+planet vel (km/s EMO2000)	the velocity vector of the planet in km/s, reference frame EMO2000
+
+C3 (km2/s2)	The 
+
+DeltaV (km/s)	The necessary delta-v in km/s of the trajectory to arrive at the planet
+
+arrival mass (kg Falcon H Rec + biprop)		The arrival mass of the spacecraft in kg at the planet's system using a Falcon Heavy Rec+biprop rocket for launch
+
+flyby body	The fly-by body sequence using the NAIF-SPICE body IDs 
+
+days past J2000	The date of the fly-by in days past J2000

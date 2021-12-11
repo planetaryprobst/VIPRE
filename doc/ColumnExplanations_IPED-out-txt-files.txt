@@ -1,0 +1,52 @@
+
+Variable name (unit)	Explanation
+	
+Bvec-theta(rad) 	Angle theta in radians between T-axis of the B-plane and B-vector. The B-vector is a variable to facilitate targeting during fly-bys or entry missions, as part of a two-dimensional coordinate system (T-axis, R-axis) called the B-plane. The B-plane is the plane as the plane that contains the center of the planet and is perpendicular to the incoming asymptote of the trajectory. The B-vector is defined as the vector from the center of the planet to the point where the incoming asymptote pierces the B-plane. For more detailed mathematical and graphical explanations, I recommend this page: https://help.agi.com/stk/index.htm#gator/eq-bplane.htm 
+
+Bvec-abs(km) 	 The length of the B-vector in km. 
+
+entryTrajec(boolean) 	 A boolean indicating if the trajectory is an entry trajectory (true) or a fly-by trajectory (false)
+
+stateEqu-rX(km) 	 The x-component of the position vector in km where the trajectory crosses the equatorial plane of the planet-inertial reference frame. 
+
+stateEqu-rY(km) 	 The y-component of the position vector in km
+
+stateEqu-rZ(km) 	 The z-component of the position vector in km 
+
+stateEqu-vX(km/s) 	 The x-component of the velocity vector in km/s 
+
+stateEqu-vY(km/s) 	 The y-component of the velocity vector in km/s 
+
+stateEqu-vZ(km/s)	 The z-component of the velocity vector in km/s 
+
+safe(boolean) 	 	A boolean indicating if the trajectory is considered as safe (true) or unsafe (false). A trajectory is considered as safe if it doesn't cross blocked areas (in this case, rings in the equatorial plane)
+
+entryState-rX(km) 	 The x-component of the position vector in km where the trajectory enters the atmosphere as defined by the entry height in the computational script. The vector is described in the inertial reference frame.
+
+entryState-rY(km) 	 The y-component of the position vector in km 
+ 
+entryState-rZ(km) 	 The z-component of the position vector in km 
+
+entryState-vX(km/s) 	 The x-component of the velocity vector in km/s 
+
+entryState-vY(km/s) 	 The y-component of the velocity vector in km/s 
+
+entryState-vZ(km/s) 	 The z-component of the velocity vector in km/s 
+
+lon_entry(rad)	The geocentric longitude of the entry point in radians.
+
+lat_entry(rad) 	 The geocentric latitude of the entry point in radians.
+
+vRot-x(km/s) 	 The x-component of the rotational velocity of the planet at the entry point in km/s.
+
+vRot-y(km/s) 	 The y-component of the rotational velocity of the planet at the entry point in km/s.
+
+vRot-z(km/s) 	 The z-component of the rotational velocity of the planet at the entry point in km/s.
+
+FPA(rad) 	 The flight path angle in radians. The flight path angle is defined as the angle between the local horizontal and the velocity vector. The local horizontal is perpendicular to the radius/position vector r.
+
+vRel_entry-x(km/s) 	 The x-component of the relative entry velocity in km/s. The relative entry velocity is the velocity that the probe experiences when entering the atmosphere, taking into account the rotation of the planet. It is computed using the orbital velocity of the entry probe (given by the entry state velocity vector entryState) and the rotational velocity vector vRot.  
+
+vRel_entry-y(km/s)	The y-component of the relative entry velocity in km/s.
+
+vRel_entry-z(km/s)	The z-component of the relative entry velocity in km/s.
