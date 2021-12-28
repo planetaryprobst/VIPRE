@@ -28,7 +28,7 @@
 #   
 #   IPED is part of the software package VIPRE, consisting of VAPRE and 
 #   IPED, a software to Visualize the Impact of the PRobe Entry location
-#   on the spacecraft and mission design.
+#   on the science, mission and spacecraft design.
 #   
 #--------------------------------------------------------------------------
 #   Call:
